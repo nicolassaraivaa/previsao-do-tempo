@@ -178,6 +178,13 @@ span{
     right: 5px;
 }
 
+footer{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 182px;
+    opacity: 0.3;}
+
 @media screen and (max-width: 640px ) and (orientation: portrait){
     
     .input-cidade{

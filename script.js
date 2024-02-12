@@ -52,4 +52,3 @@ function cliqueiNoBotao() {
     buscarCidade(cidade)
 }
 
-
