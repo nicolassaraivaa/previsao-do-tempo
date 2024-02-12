@@ -20,12 +20,13 @@ async function buscarCidade(cidade) {
 function cliqueiNoBotao() {
     const cidade = document.querySelector(".input-cidade").value
     const divmaior = document.querySelector(".caixa-maior")
-    const lupa = document.querySelector(".img-busca")
+    const lupa = document.querySelector(".botao-busca")
     const divcity = document.querySelector(".div-cidade")
 
     if (cidade !== '') {
         divmaior.style.height = '260px'
         divmaior.style.top = '26px'
+
     }else{
         divcity.style.opacity = '0'
         alert ('Por favor digite uma cidade...')
@@ -46,8 +47,6 @@ function cliqueiNoBotao() {
             divcity.style.right = '45px'
 
         }
-
-    }
 
     buscarCidade(cidade)
 }

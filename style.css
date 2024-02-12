@@ -65,6 +65,7 @@ h1 {
     position: relative;
     bottom: -7px;
     margin-left: -44px;
+    display: block;
 }
 
 .img-busca {
