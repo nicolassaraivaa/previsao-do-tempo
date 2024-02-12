@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+        <article class="">
+            <img src="img/NS-removebg-preview.png" alt="logo" class="logo">
+            <h1>CONFIRA O CLIMA DE UMA CIDADE:</h1>
+                <input class="input-cidade" type="text" placeholder="Digite o nome da cidade" required>
+                <button disabled class="botao-busca"><img class="img-busca" src="img/lupa.logo.png" alt="icone-lupa"
+                        onclick="cliqueiNoBotao ()">
+                </button>
+        </article>
+
+        <div class="caixa-maior">
+            <div class="div-cidade">
+                <h2 class="cidade"> </h2>
+            </div>
+            
+            <div class="caixa-media">
+                <img class="img-previsao" >
+                <p class="texto-previsao"></p>
+            </div>
+            
+            <p class="temp"> AGORA </p>
+            <p class="graus"> 0 °C </p>
+            
+            <div class="temperaturas">
+                <p class="temp-min">MIN. <br> <span class="min">0 °C</span> </p>
+                <p class="temp-max">MÁX. <br> <span class="max">0 °C</span></p>
+            </div>
+            
+            <div class="div-umidade">
+                <img src="img/gota.svg" alt="logo-umidade" class="logo-umidade">
+                <p class="umidade">0%</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

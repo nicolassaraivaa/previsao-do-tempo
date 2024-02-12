@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /*centraliza na horizontal*/
+    align-items: center;
+    /*centraliza na vertical*/
+    background: #000D81;
+    background-attachment: fixed;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+.div-busca{
+    background: aqua;
+    width: 100%;
+}
+
+h1 {
+    color: #ffff;
+    font-size: .875rem;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.input-cidade {
+    border: 2px solid #FFC107;
+    outline: none;
+    /*tirar efeitos dentro do input*/
+    padding: 7px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #000D81;
+    color: white;
+    width: 500px;
+
+}
+
+.input-cidade::placeholder{
+    font-size: 16px;
+}
+
+.botao-busca {
+    border: none;
+    outline: none;
+    padding: 0px;
+    border-radius: 50px;
+    background-color: #162081;
+    cursor: pointer;
+    position: relative;
+    bottom: -7px;
+    margin-left: -44px;
+}
+
+.img-busca {
+    width: 30px;
+ }
+
+.caixa-maior {
+    background: #000D81;
+    border-radius: 30px;
+    height: 190px;
+    width: 80%;
+    border: 3px solid #FFC107;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    position: relative;
+    top: -7px;
+}
+
+.div-cidade{
+    background-color: #000D81;
+    margin-left: auto;
+    margin-right:auto ;
+    width: 150px;
+    position: absolute;
+    bottom: 239px;
+    right: 120px;
+}
+
+.cidade {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.temp {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.graus{
+    text-align: center;
+    color: #FFC107;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.img-previsao{
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.texto-previsao {
+    text-align: center;
+    position: relative;
+    left: -9px;
+    color: #FFC107;
+    margin-left: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    /*Só a primeira letra maiuscula */
+}
+
+.temperaturas{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.temp-min{
+    border-right: 2px solid white;
+    margin-left: 10px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.temp-max{
+    margin-left:20px;
+    font-size: 12px;
+}
+
+span{
+    color: #FFC107;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.div-umidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.umidade {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.logo-umidade{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+@media screen and (max-width: 640px ) and (orientation: portrait){
+    
+    .input-cidade{
+        width: 380px;
+
+    }
+
+    .div-cidade{
+        right: 72px;
+    }
+
+}
+
+@media screen and (max-width: 400px ) and (orientation: portrait){
+    .input-cidade{
+        width: 300px;
+    }
+
+    .div-cidade{
+        right: 40px;
+    }
+}
+
