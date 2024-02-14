@@ -33,7 +33,7 @@ function cliqueiNoBotao() {
         
     }
 
-    if(cidade.length > 10){
+    if(cidade.length >= 10){
         divcity.style.width = '215px'
         divcity.style.right = '98px'
 
@@ -45,6 +45,9 @@ function cliqueiNoBotao() {
 
         if (cidade.length > 10) {
             divcity.style.right = '45px'
+        }
+        if (cidade.length >= 10){
+            divcity.style.right = '38px'
 
         }
 
@@ -52,4 +55,3 @@ function cliqueiNoBotao() {
 
     buscarCidade(cidade)
 }
-
