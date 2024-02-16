@@ -18,7 +18,7 @@ async function buscarCidade(cidade) {
 }
 
 function cliqueiNoBotao() {
-    const cidade = document.querySelector(".input-cidade").value
+    const cidade = document.querySelector(".input-cidade").value.trim();
     const divmaior = document.querySelector(".caixa-maior")
     const lupa = document.querySelector(".botao-busca")
     const divcity = document.querySelector(".div-cidade")
